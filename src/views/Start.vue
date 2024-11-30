@@ -1,5 +1,5 @@
 <template>
-  <div class="start-view">moin</div>
+  <div class="start-view">Start</div>
 </template>
 
 <script setup>

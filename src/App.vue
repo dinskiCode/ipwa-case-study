@@ -18,7 +18,6 @@ import Header from "./components/Header.vue";
 import { useRoute } from "vue-router";
 
 const currentRoute = useRoute();
-console.log(currentRoute);
 </script>
 
 <style lang="scss">
@@ -31,17 +30,8 @@ console.log(currentRoute);
   margin: 0;
 }
 
-.header {
-  background-color: var(--p-emerald-700);
-  color: white;
-  padding: 5px;
-  text-align: center;
-  flex-shrink: 0;
-  width: 100%;
-}
-
 .footer {
-  background-color: #35495e;
+  background-color: var(--p-slate-900);
   color: white;
   text-align: center;
   flex-shrink: 0;

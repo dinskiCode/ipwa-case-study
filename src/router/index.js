@@ -11,7 +11,7 @@ const routes = [
   },
   {
     path: "/emissions-monitor",
-    name: "Emissionsdaten",
+    name: "Emissions",
     component: () => import("@/views/Emissions.vue"),
     meta: {
       isMenuItem: true,

@@ -6,37 +6,42 @@
       :rows="10"
       :rowsPerPageOptions="[5, 10, 20, 50]"
       paginatorTemplate="RowsPerPageDropdown FirstPageLink PrevPageLink CurrentPageReport NextPageLink LastPageLink"
-      currentPageReportTemplate="Zeige {first} bis {last} von insgesamt {totalRecords}"
-      :globalFilter="filters.contains"
+      currentPageReportTemplate="{first} to {last} of {totalRecords}"
+      v-model:filters="filters"
+      :globalFilterFields="['company_name', 'country']"
     >
       <template #header>
         <div class="flex flex-wrap items-center justify-between gap-2">
           <span class="text-xl font-bold"
-            >Emissionsdaten nach Unternehmen und Land</span
+            >Emission data by company and country</span
           >
           <InputText
-            v-model="filters.contains.value"
-            placeholder="Tabelle durchsuchen"
+            v-model="filters.global.value"
+            placeholder="Search"
             class="px-4 py-2 border border-slate-400"
           />
         </div>
       </template>
-      <Column field="company_name" header="Unternehmen" sortable></Column>
-      <Column field="country" header="Land" sortable></Column>
-      <Column field="co2_emissions" header="CO2-Emissionen" sortable></Column>
+      <Column field="company_name" header="Company" sortable />
+      <Column field="country" header="Country" sortable>
+        <template #body="{ data }">
+          <span :class="`fi fi-${data.country_code.toLowerCase()}`"></span>
+          <span class="mx-2">{{ data.country }}</span>
+        </template>
+      </Column>
+      <Column field="co2_emissions" header="CO2-Emissions (in t)" sortable />
     </DataTable>
   </div>
 </template>
 
 <script setup>
 import { DataTable, Column, InputText } from "primevue";
-import Button from "primevue/button";
 import api from "@/api";
 import { onMounted, reactive, ref } from "vue";
 import { FilterMatchMode } from "@primevue/core/api";
 
 const filters = ref({
-  contains: { value: null, matchMode: FilterMatchMode.CONTAINS },
+  global: { value: null, matchMode: FilterMatchMode.CONTAINS },
 });
 
 const tableData = ref([]);

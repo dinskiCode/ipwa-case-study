@@ -3,6 +3,7 @@ import Aura from "@primevue/themes/aura";
 import "@/assets/main.scss";
 import "@/style.css";
 import "primeicons/primeicons.css";
+import "flag-icons/css/flag-icons.min.css";
 
 import { createApp } from "vue";
 import { createPinia } from "pinia";

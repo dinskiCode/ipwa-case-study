@@ -1,7 +1,13 @@
 <template>
   <div class="grid grid-cols-4 p-0">
-    <div class="name-wrapper flex justify-content-start">Greenfighters</div>
-    <div class="global-links flex justify-content-start">
+    <div
+      class="md:col-span-1 col-span-2 name-wrapper flex justify-content-start"
+    >
+      Greenfighters
+    </div>
+    <div
+      class="md:col-span-1 col-span-2 global-links flex justify-content-start"
+    >
       <router-link
         class="link-item mr-5 p-2"
         v-for="link in globalLinks"

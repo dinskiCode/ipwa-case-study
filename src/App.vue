@@ -7,7 +7,7 @@
         <router-view></router-view>
       </div>
     </main>
-    <footer class="footer">
+    <footer class="footer p-5">
       <span>&copy;footer</span>
     </footer>
   </div>
@@ -40,7 +40,7 @@ const currentRoute = useRoute();
 
 .content-wrapper {
   flex: 1;
-  background-color: white;
+  background-color: var(--p-slate-200);
   overflow-y: auto;
   padding: 1rem;
   width: 100%;

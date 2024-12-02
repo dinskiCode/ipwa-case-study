@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg baseProfile="tiny" height="500px" version="1.2" width="500px" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs /><circle cx="250" cy="200" fill="green" r="50" /><rect fill="brown" height="100" width="40" x="230" y="250" /><circle cx="250" cy="200" fill="lightblue" r="120" stroke="green" stroke-width="4" /><text fill="green" font-family="Arial" font-size="30" font-weight="bold" x="130" y="400">Greenfighters</text></svg>

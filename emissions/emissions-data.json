@@ -1,0 +1,262 @@
+{
+  "data": [
+    {
+      "company_name": "EcoPower Ltd",
+      "country": "USA",
+      "country_code": "US",
+      "co2_emissions": 1204.3
+    },
+    {
+      "company_name": "GreenFuture Inc",
+      "country": "Germany",
+      "country_code": "DE",
+      "co2_emissions": 953.1
+    },
+    {
+      "company_name": "Sunrise Energy",
+      "country": "India",
+      "country_code": "IN",
+      "co2_emissions": 1845.2
+    },
+    {
+      "company_name": "BlueSky Corp",
+      "country": "Canada",
+      "country_code": "CA",
+      "co2_emissions": 473.7
+    },
+    {
+      "company_name": "SolarTech Solutions",
+      "country": "China",
+      "country_code": "CN",
+      "co2_emissions": 2743.5
+    },
+    {
+      "company_name": "WindForce LLC",
+      "country": "Brazil",
+      "country_code": "BR",
+      "co2_emissions": 832.9
+    },
+    {
+      "company_name": "CleanAir Enterprises",
+      "country": "Australia",
+      "country_code": "AU",
+      "co2_emissions": 648.1
+    },
+    {
+      "company_name": "RiverFlow Industries",
+      "country": "France",
+      "country_code": "FR",
+      "co2_emissions": 721.4
+    },
+    {
+      "company_name": "EarthCare Ltd",
+      "country": "UK",
+      "country_code": "GB",
+      "co2_emissions": 1153.6
+    },
+    {
+      "company_name": "OceanBreeze Corp",
+      "country": "South Africa",
+      "country_code": "ZA",
+      "co2_emissions": 539.2
+    },
+    {
+      "company_name": "BrightFuture Co",
+      "country": "Russia",
+      "country_code": "RU",
+      "co2_emissions": 1952.7
+    },
+    {
+      "company_name": "EnergyMakers Inc",
+      "country": "Japan",
+      "country_code": "JP",
+      "co2_emissions": 883.3
+    },
+    {
+      "company_name": "EcoVision Ltd",
+      "country": "South Korea",
+      "country_code": "KR",
+      "co2_emissions": 1204.8
+    },
+    {
+      "company_name": "GreenSpark Industries",
+      "country": "Mexico",
+      "country_code": "MX",
+      "co2_emissions": 764.5
+    },
+    {
+      "company_name": "NextGen Renewables",
+      "country": "Italy",
+      "country_code": "IT",
+      "co2_emissions": 615.7
+    },
+    {
+      "company_name": "PureEnergy Systems",
+      "country": "Spain",
+      "country_code": "ES",
+      "co2_emissions": 911.3
+    },
+    {
+      "company_name": "Harmony Solutions",
+      "country": "USA",
+      "country_code": "US",
+      "co2_emissions": 1035.4
+    },
+    {
+      "company_name": "EcoSphere Dynamics",
+      "country": "Germany",
+      "country_code": "DE",
+      "co2_emissions": 859.6
+    },
+    {
+      "company_name": "GreenFields Power",
+      "country": "India",
+      "country_code": "IN",
+      "co2_emissions": 1482.1
+    },
+    {
+      "company_name": "EcoWave Ltd",
+      "country": "China",
+      "country_code": "CN",
+      "co2_emissions": 2749.2
+    },
+    {
+      "company_name": "SolarEdge Enterprises",
+      "country": "Brazil",
+      "country_code": "BR",
+      "co2_emissions": 982.5
+    },
+    {
+      "company_name": "ClearSky Power",
+      "country": "Canada",
+      "country_code": "CA",
+      "co2_emissions": 467.9
+    },
+    {
+      "company_name": "FutureEnergy Group",
+      "country": "France",
+      "country_code": "FR",
+      "co2_emissions": 702.4
+    },
+    {
+      "company_name": "BluePlanet LLC",
+      "country": "UK",
+      "country_code": "GB",
+      "co2_emissions": 1094.6
+    },
+    {
+      "company_name": "EcoGlobe Inc",
+      "country": "South Africa",
+      "country_code": "ZA",
+      "co2_emissions": 523.8
+    },
+    {
+      "company_name": "RenewTech Solutions",
+      "country": "Russia",
+      "country_code": "RU",
+      "co2_emissions": 2112.3
+    },
+    {
+      "company_name": "CleanTech Dynamics",
+      "country": "Japan",
+      "country_code": "JP",
+      "co2_emissions": 871.2
+    },
+    {
+      "company_name": "PowerSphere Co",
+      "country": "South Korea",
+      "country_code": "KR",
+      "co2_emissions": 1234.5
+    },
+    {
+      "company_name": "SolarFlow Industries",
+      "country": "Mexico",
+      "country_code": "MX",
+      "co2_emissions": 789.2
+    },
+    {
+      "company_name": "BrightLight Ltd",
+      "country": "Italy",
+      "country_code": "IT",
+      "co2_emissions": 645.1
+    },
+    {
+      "company_name": "EcoCharge Group",
+      "country": "Spain",
+      "country_code": "ES",
+      "co2_emissions": 925.8
+    },
+    {
+      "company_name": "EarthEnergy Corp",
+      "country": "Australia",
+      "country_code": "AU",
+      "co2_emissions": 701.4
+    },
+    {
+      "company_name": "NextGen Power",
+      "country": "USA",
+      "country_code": "US",
+      "co2_emissions": 1103.7
+    },
+    {
+      "company_name": "FutureSphere Dynamics",
+      "country": "Germany",
+      "country_code": "DE",
+      "co2_emissions": 970.8
+    },
+    {
+      "company_name": "GreenWind Solutions",
+      "country": "India",
+      "country_code": "IN",
+      "co2_emissions": 1743.2
+    },
+    {
+      "company_name": "EcoSolutions Ltd",
+      "country": "China",
+      "country_code": "CN",
+      "co2_emissions": 2845.6
+    },
+    {
+      "company_name": "Oceanic Energy",
+      "country": "Brazil",
+      "country_code": "BR",
+      "co2_emissions": 847.1
+    },
+    {
+      "company_name": "PureSky Dynamics",
+      "country": "Canada",
+      "country_code": "CA",
+      "co2_emissions": 434.6
+    },
+    {
+      "company_name": "FutureVision Co",
+      "country": "France",
+      "country_code": "FR",
+      "co2_emissions": 682.9
+    },
+    {
+      "company_name": "RenewableFields Inc",
+      "country": "UK",
+      "country_code": "GB",
+      "co2_emissions": 1124.5
+    },
+    {
+      "company_name": "EcoTech Systems",
+      "country": "South Africa",
+      "country_code": "ZA",
+      "co2_emissions": 578.3
+    },
+    {
+      "company_name": "BrightSphere Group",
+      "country": "Russia",
+      "country_code": "RU",
+      "co2_emissions": 2013.8
+    },
+    {
+      "company_name": "SolarWave Enterprises",
+      "country": "Japan",
+      "country_code": "JP",
+      "co2_emissions": 893.4
+    }
+  ]
+}

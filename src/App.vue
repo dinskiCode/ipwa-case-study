@@ -1,18 +1,7 @@
 <template>
   <div class="app-container">
     <Header class="header" />
-    <main class="content-wrapper">
-      <div class="content grid grid-cols-4 gap-4">
-        <div
-          :class="`hidden sm:block llm-wrapper bg-white rounded-lg col-span-1 p-3`"
-        >
-          <LocalLinksMenu />
-        </div>
-        <router-view v-slot="{ Component }" class="col-span-4 sm:col-span-3">
-          <component :is="Component"></component>
-        </router-view>
-      </div>
-    </main>
+    <BaseContent />
     <footer class="footer p-5">
       <span>&copy; Greenfighters</span>
     </footer>
@@ -20,11 +9,19 @@
 </template>
 
 <script setup>
+import { computed, onBeforeMount, onMounted, reactive } from "vue";
 import Header from "./components/Header.vue";
 import LocalLinksMenu from "./components/LocalLinksMenu.vue";
+import BaseContent from "./components/BaseContent.vue";
 import { useRoute } from "vue-router";
 
-const currentRoute = useRoute();
+const state = reactive({
+  route: null,
+});
+
+onMounted(() => {
+  state.route = useRoute();
+});
 </script>
 
 <style lang="scss">

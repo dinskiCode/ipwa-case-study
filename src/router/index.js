@@ -13,9 +13,18 @@ const routes = [
     path: "/emissions-monitor",
     name: "Emissions",
     component: () => import("@/views/Emissions.vue"),
+    children: [
+      { path: "archive/2020", name: "2020" },
+      { path: "archive/2021", name: "2021" },
+      { path: "archive/2022", name: "2022" },
+      { path: "archive/2023", name: "2023" },
+    ],
     meta: {
       isMenuItem: true,
-      showLinksMenu: true,
+      localLinksMenu: {
+        show: true,
+        header: "Archive",
+      },
     },
   },
 ];

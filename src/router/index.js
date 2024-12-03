@@ -15,6 +15,7 @@ const routes = [
     component: () => import("@/views/Emissions.vue"),
     meta: {
       isMenuItem: true,
+      showLinksMenu: true,
     },
   },
 ];

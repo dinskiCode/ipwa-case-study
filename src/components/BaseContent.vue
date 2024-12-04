@@ -1,9 +1,28 @@
 <template>
+  <div class="accordion-wrapper sm:hidden sticky z-10 top-0 mb-5">
+    <Accordion
+      expandIcon="pi pi-bars"
+      collapseIcon="pi pi-bars"
+      v-model:value="mobileLocalLinksMenuOpen"
+    >
+      <AccordionPanel
+        expandIcon="pi pi-bars"
+        collapseIcon="pi pi-bars"
+        class="rounded"
+      >
+        <AccordionHeader class="bg-white px-3 pt-4"></AccordionHeader>
+        <AccordionContent>
+          <LocalLinksMenu :data="data" />
+        </AccordionContent>
+      </AccordionPanel>
+    </Accordion>
+  </div>
   <main class="content-wrapper">
-    {{ isLtr }}
     <div class="content grid grid-cols-4 gap-4">
       <div
-        :class="`hidden sm:block llm-wrapper bg-white rounded-lg col-span-1 p-3`"
+        :class="`hidden sm:block llm-wrapper bg-white rounded-lg col-span-1 p-3 ${
+          isRtl ? 'order-2' : ''
+        }`"
         v-if="showLocalLinksMenu"
       >
         <LocalLinksMenu :data="data" />
@@ -21,9 +40,15 @@
 </template>
 
 <script setup>
-import { computed } from "vue";
+import { computed, ref } from "vue";
 import LocalLinksMenu from "@/components/LocalLinksMenu.vue";
 import { useRoute } from "vue-router";
+import {
+  Accordion,
+  AccordionPanel,
+  AccordionHeader,
+  AccordionContent,
+} from "primevue";
 
 const route = useRoute();
 const showLocalLinksMenu = computed(
@@ -32,12 +57,14 @@ const showLocalLinksMenu = computed(
 
 const data = computed(() => {
   return {
-    header: route.meta?.localLinksMenu.header,
-    links: route.matched[0].children,
+    header: route.meta?.localLinksMenu?.header,
+    links: route.matched[0]?.children,
   };
 });
 
-const isLtr = computed(() => document.documentElement.dir);
+const mobileLocalLinksMenuOpen = ref(false);
+
+const isRtl = false;
 </script>
 
 <style lang="scss">

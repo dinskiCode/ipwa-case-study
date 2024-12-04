@@ -1,10 +1,10 @@
 <template>
   <div class="local-links-menu bg-white rounded-lg p-2">
     <h3 class="font-bold mb-3 text-slate-900">
-      {{ props.route.meta.localLinksMenu.header }}
+      {{ props.data.header }}
     </h3>
     <ul>
-      <li v-for="link in links" class="mb-2">
+      <li v-for="link in props.data.links" class="mb-2">
         <router-link
           :to="link.path"
           class="text-slate-500 hover:text-slate-900"
@@ -20,14 +20,12 @@ import { useRoute } from "vue-router";
 import { computed, reactive } from "vue";
 
 const props = defineProps({
-  route: {
-    required: false,
-  },
+  data: { required: false },
 });
-
-console.log(props);
-
-const links = computed(() => props.route.children);
 </script>
 
-<style></style>
+<style scoped>
+.router-link-active {
+  color: var(--p-slate-900);
+}
+</style>

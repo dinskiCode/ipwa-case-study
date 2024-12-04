@@ -1,6 +1,6 @@
 <template>
   <div class="emissions-view">
-    <div class="dt-wrapper bg-white rounded-lg p-3">
+    <div class="">
       <DataTable
         :value="tableData"
         paginator

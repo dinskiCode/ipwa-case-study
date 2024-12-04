@@ -3,11 +3,14 @@
     <div class="content grid grid-cols-4 gap-4">
       <div
         :class="`hidden sm:block llm-wrapper bg-white rounded-lg col-span-1 p-3`"
-        v-if="currentRoute?.children"
+        v-if="showLocalLinksMenu"
       >
-        <LocalLinksMenu :route="currentRoute" />
+        <LocalLinksMenu :data="data" />
       </div>
-      <router-view v-slot="{ Component }" class="col-span-4 sm:col-span-3">
+      <router-view
+        v-slot="{ Component }"
+        class="col-span-4 sm:col-span-3 bg-white rounded-lg p-3"
+      >
         <component :is="Component"></component>
       </router-view>
     </div>
@@ -27,7 +30,16 @@ import LocalLinksMenu from "@/components/LocalLinksMenu.vue";
 import { useRoute } from "vue-router";
 
 const route = useRoute();
-const currentRoute = computed(() => route.matched[route.matched.length - 1]);
+const showLocalLinksMenu = computed(
+  () => route.matched[0]?.children && route.matched[0].children?.length
+);
+
+const data = computed(() => {
+  return {
+    header: route.meta?.localLinksMenu.header,
+    links: route.matched[0].children,
+  };
+});
 </script>
 
 <style lang="scss">

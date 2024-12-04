@@ -10,20 +10,26 @@ const routes = [
     },
   },
   {
-    path: "/emissions-monitor",
+    path: "/emissions",
     name: "Emissions",
-    component: () => import("@/views/Emissions.vue"),
+    component: () => import("@/views/Emissions/Index.vue"),
     children: [
-      { path: "archive/2020", name: "2020" },
-      { path: "archive/2021", name: "2021" },
-      { path: "archive/2022", name: "2022" },
-      { path: "archive/2023", name: "2023" },
+      {
+        path: "/emissions/data",
+        name: "Latest Data",
+        component: () => import("@/views/Emissions/Data.vue"),
+      },
+      {
+        path: "/emissions/personal-calculator",
+        name: "Calculate your personal emissions",
+        component: () => import("@/views/Emissions/Mock.vue"),
+      },
     ],
     meta: {
       isMenuItem: true,
       localLinksMenu: {
         show: true,
-        header: "Archive",
+        header: "Emissions",
       },
     },
   },

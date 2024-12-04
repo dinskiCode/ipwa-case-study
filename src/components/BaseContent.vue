@@ -9,7 +9,9 @@
       </div>
       <router-view
         v-slot="{ Component }"
-        class="col-span-4 sm:col-span-3 bg-white rounded-lg p-3"
+        :class="`col-span-4 ${
+          showLocalLinksMenu ? 'sm:col-span-3' : ''
+        } bg-white rounded-lg p-3`"
       >
         <component :is="Component"></component>
       </router-view>
@@ -18,14 +20,7 @@
 </template>
 
 <script setup>
-import {
-  computed,
-  onBeforeMount,
-  onMounted,
-  reactive,
-  onBeforeUnmount,
-  ref,
-} from "vue";
+import { computed } from "vue";
 import LocalLinksMenu from "@/components/LocalLinksMenu.vue";
 import { useRoute } from "vue-router";
 

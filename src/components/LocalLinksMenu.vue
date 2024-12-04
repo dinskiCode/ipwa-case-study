@@ -1,8 +1,8 @@
 <template>
   <div class="local-links-menu bg-white rounded-lg p-2">
-    <h3 class="font-bold mb-3 text-slate-900">
+    <h2 class="font-bold mb-3 text-slate-700 text-lg">
       {{ props.data.header }}
-    </h3>
+    </h2>
     <ul>
       <li v-for="link in props.data.links" class="mb-2">
         <router-link
@@ -16,9 +16,6 @@
 </template>
 
 <script setup>
-import { useRoute } from "vue-router";
-import { computed, reactive } from "vue";
-
 const props = defineProps({
   data: { required: false },
 });
@@ -26,6 +23,7 @@ const props = defineProps({
 
 <style scoped>
 .router-link-active {
-  color: var(--p-slate-900);
+  color: var(--p-slate-700);
+  font-weight: 500;
 }
 </style>

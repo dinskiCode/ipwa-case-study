@@ -12,6 +12,7 @@ const routes = [
   {
     path: "/emissions",
     name: "Emissions",
+    redirect: "/emissions/data",
     component: () => import("@/views/Emissions/Index.vue"),
     children: [
       {
@@ -22,6 +23,16 @@ const routes = [
       {
         path: "/emissions/personal-calculator",
         name: "Calculate your personal emissions",
+        component: () => import("@/views/Emissions/Mock.vue"),
+      },
+      {
+        path: "/emissions/trading-systems",
+        name: "Trading Systems",
+        component: () => import("@/views/Emissions/Mock.vue"),
+      },
+      {
+        path: "/emissions/faq",
+        name: "FAQ",
         component: () => import("@/views/Emissions/Mock.vue"),
       },
     ],

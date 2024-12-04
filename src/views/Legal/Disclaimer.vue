@@ -1,9 +1,8 @@
 <template>
-  <div class="start-view">Disclaimer</div>
+  <div class="start-view">
+    Greenfighters e.V. provides the information on this website for general
+    informational purposes only.
+  </div>
 </template>
-
-<script setup>
-import Button from "primevue/button";
-</script>
 
 <style></style>

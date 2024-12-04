@@ -1,9 +1,8 @@
 <template>
-  <div class="start-view">Pirvacy Policy</div>
+  <div class="start-view">
+    At Greenfighters e.V., we take your privacy seriously. We do not collect
+    personal data as of now.
+  </div>
 </template>
-
-<script setup>
-import Button from "primevue/button";
-</script>
 
 <style></style>

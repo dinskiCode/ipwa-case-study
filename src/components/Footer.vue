@@ -9,7 +9,7 @@
             alt=""
             srcset=""
           />
-          &copy; 2024 Greenfighters
+          &copy; 2024 Greenfighters e.V.
         </div>
       </div>
       <div class="sm:col-span-1 col-span-2 flex items-center hover:underline">

@@ -1,9 +1,8 @@
 <template>
-  <div class="start-view">Terms of Use</div>
+  <div class="start-view">
+    You may use our site responsibly. The contents of this website are property
+    of Greenfighters e.V.
+  </div>
 </template>
-
-<script setup>
-import Button from "primevue/button";
-</script>
 
 <style></style>

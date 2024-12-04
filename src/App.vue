@@ -2,17 +2,15 @@
   <div class="app-container">
     <Header class="header" />
     <BaseContent />
-    <footer class="footer p-5">
-      <span>&copy; Greenfighters</span>
-    </footer>
+    <Footer />
   </div>
 </template>
 
 <script setup>
 import { computed, onBeforeMount, onMounted, reactive } from "vue";
 import Header from "./components/Header.vue";
-import LocalLinksMenu from "./components/LocalLinksMenu.vue";
 import BaseContent from "./components/BaseContent.vue";
+import Footer from "./components/Footer.vue";
 import { useRoute } from "vue-router";
 
 const state = reactive({
@@ -32,14 +30,6 @@ onMounted(() => {
   width: 100vw;
   overflow: hidden;
   margin: 0;
-}
-
-.footer {
-  background-color: var(--p-slate-900);
-  color: white;
-  text-align: center;
-  flex-shrink: 0;
-  width: 100%;
 }
 
 .content-wrapper {

@@ -44,6 +44,41 @@ const routes = [
       },
     },
   },
+  {
+    path: "/legal",
+    name: "Legal",
+    redirect: "/legal/imprint",
+    component: () => import("@/views/Legal/Index.vue"),
+    children: [
+      {
+        path: "/legal/imprint",
+        name: "Imprint",
+        component: () => import("@/views/Legal/Imprint.vue"),
+      },
+      {
+        path: "/legal/privacy-policy",
+        name: "Privacy Policy",
+        component: () => import("@/views/Legal/Privacy.vue"),
+      },
+      {
+        path: "/legal/disclaimer",
+        name: "Disclaimer",
+        component: () => import("@/views/Legal/Disclaimer.vue"),
+      },
+      {
+        path: "/legal/terms-of-use",
+        name: "Terms of Use",
+        component: () => import("@/views/Legal/TermsOfUse.vue"),
+      },
+    ],
+    meta: {
+      isMenuItem: false,
+      localLinksMenu: {
+        show: true,
+        header: "Legal",
+      },
+    },
+  },
 ];
 
 const router = createRouter({

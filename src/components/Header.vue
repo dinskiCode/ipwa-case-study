@@ -1,12 +1,14 @@
 <template>
   <div class="grid grid-cols-4 p-0">
     <div
-      class="md:col-span-1 col-span-2 name-wrapper flex justify-content-start"
+      class="md:col-span-1 col-span-2 name-wrapper flex justify-content-start p-2"
     >
-      Greenfighters
+      <div class="logo-container bg-white rounded py-1 px-2">
+        <img src="@/assets/logos/greenfighters-no-text.png" alt="" srcset="" />
+      </div>
     </div>
     <div
-      class="md:col-span-1 col-span-2 global-links flex justify-content-start"
+      class="md:col-span-1 col-span-2 global-links flex justify-content-end items-end"
     >
       <router-link
         class="link-item mr-5 p-2"
@@ -33,10 +35,11 @@ const globalLinks = computed(() => {
 });
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .link-item {
   &:hover {
     background-color: var(--p-emerald-600);
+    color: white;
   }
 }
 
@@ -51,5 +54,10 @@ const globalLinks = computed(() => {
 
 .router-link-active {
   border-bottom: 2px solid white;
+}
+
+img {
+  width: 50px;
+  height: auto;
 }
 </style>

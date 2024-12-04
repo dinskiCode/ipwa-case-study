@@ -1,5 +1,6 @@
 <template>
   <main class="content-wrapper">
+    {{ isLtr }}
     <div class="content grid grid-cols-4 gap-4">
       <div
         :class="`hidden sm:block llm-wrapper bg-white rounded-lg col-span-1 p-3`"
@@ -35,6 +36,8 @@ const data = computed(() => {
     links: route.matched[0].children,
   };
 });
+
+const isLtr = computed(() => document.documentElement.dir);
 </script>
 
 <style lang="scss">

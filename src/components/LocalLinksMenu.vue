@@ -1,6 +1,6 @@
 <template>
   <div class="local-links-menu bg-white rounded-lg p-2">
-    <h2 class="font-bold mb-3 text-slate-700 text-lg">
+    <h2 class="font-bold mb-3 text-slate-700 text-xl">
       {{ props.data.header }}
     </h2>
     <ul>

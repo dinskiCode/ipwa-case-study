@@ -72,7 +72,7 @@ const data = computed(() => {
 
 const mobileLocalLinksMenuOpen = ref(false);
 
-const rtlMode = computed(() => isRTL());
+const rtlMode = isRTL();
 </script>
 
 <style lang="scss">

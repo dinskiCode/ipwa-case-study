@@ -1,5 +1,8 @@
 <template>
-  <div class="accordion-wrapper sm:hidden sticky z-10 top-0 mb-5">
+  <div
+    class="accordion-wrapper sm:hidden sticky z-10 top-0 mb-5"
+    v-if="showLocalLinksMenu"
+  >
     <Accordion
       expandIcon="pi pi-bars"
       collapseIcon="pi pi-bars"

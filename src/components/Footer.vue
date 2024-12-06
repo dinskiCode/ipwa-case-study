@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer p-5">
+  <footer class="footer">
     <div class="grid grid-cols-8">
       <div class="copyright col-span-8 sm:col-span-3 mb-5 sm:mb-0">
         <div class="flex justify-center sm:justify-start items-center">
@@ -12,17 +12,25 @@
           &copy; 2024 Greenfighters e.V.
         </div>
       </div>
-      <div class="sm:col-span-1 col-span-2 flex items-center hover:underline">
-        <router-link to="/legal/imprint">Imprint</router-link>
+      <div class="sm:col-span-1 col-span-2 flex items-center">
+        <router-link to="/legal/imprint" class="hover:underline"
+          >Imprint</router-link
+        >
       </div>
-      <div class="sm:col-span-1 col-span-2 flex items-center hover:underline">
-        <router-link to="/legal/privacy-policy">Privacy Policy</router-link>
+      <div class="sm:col-span-1 col-span-2 flex items-center">
+        <router-link to="/legal/privacy-policy" class="hover:underline"
+          >Privacy Policy</router-link
+        >
       </div>
-      <div class="sm:col-span-1 col-span-2 flex items-center hover:underline">
-        <router-link to="/legal/disclaimer">Disclaimer</router-link>
+      <div class="sm:col-span-1 col-span-2 flex items-center">
+        <router-link to="/legal/disclaimer" class="hover:underline"
+          >Disclaimer</router-link
+        >
       </div>
-      <div class="sm:col-span-1 col-span-2 flex items-center hover:underline">
-        <router-link to="/legal/terms-of-use">Terms of Use</router-link>
+      <div class="sm:col-span-1 col-span-2 flex items-center">
+        <router-link to="/legal/terms-of-use" class="hover:underline"
+          >Terms of Use</router-link
+        >
       </div>
     </div>
   </footer>
@@ -42,7 +50,7 @@
 }
 
 img {
-  width: 55px;
+  width: 65px;
   height: auto;
 }
 </style>

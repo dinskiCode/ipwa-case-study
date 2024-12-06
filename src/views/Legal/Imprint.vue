@@ -1,9 +1,9 @@
 <template>
-  <div class="start-view">
+  <div class="start-view p-3">
     <ul>
       <li
         v-for="[key, value] of Object.entries(imprint)"
-        class="text-slate-700"
+        class="text-slate-700 mb-2"
       >
         <span class="key font-medium">{{ key }}</span
         >: <span>{{ value }}</span>
@@ -18,7 +18,7 @@ const imprint = {
   "Represented by": "John Doe",
   Address: "Musterstr. 11",
   "Postal Code, City": "90402 Nürnberg",
-  Phone: "9011-1234567891",
+  Phone: "0911-1234567891",
   Email: "info@greenfighters.com",
   "VAT ID": "DE123456789",
 };

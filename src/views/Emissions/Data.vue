@@ -18,7 +18,7 @@
             >
             <InputText
               v-model="filters.global.value"
-              placeholder="Search"
+              placeholder="Filter data"
               class="px-4 py-2 border border-slate-400"
             />
           </div>

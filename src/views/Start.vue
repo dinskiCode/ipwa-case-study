@@ -9,10 +9,10 @@
           <p class="italic quote md:text-lg lg:text-xl xl:text-2xl">
             "Our Environment is hurting and climate change can only be stopped
             if we fight it together! At Greenfighters e.V. it is our mission to
-            inform you about the state of our beloved mother earth and to create
-            a sense of urgency in everyone, so that YOU can't help but enlist
-            yourself in the fight for a greener and better future. For yourself
-            and our future generation."
+            inform you about the state of our beloved mother earth in order to
+            create a sense of urgency in everyone, so that YOU can't help but
+            enlist yourself in the fight for a greener and better future. For
+            yourself and our future generations."
           </p>
           <p class="text-slate-500 mt-1">John Doe - Founder</p>
         </div>

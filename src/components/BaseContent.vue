@@ -24,11 +24,11 @@
     <div class="content grid grid-cols-4 gap-4">
       <div
         :class="`hidden sm:block llm-wrapper bg-white rounded-lg col-span-1 p-3 ${
-          isRtl ? 'order-2' : ''
+          rtlMode ? 'order-2' : ''
         }`"
         v-if="showLocalLinksMenu"
       >
-        <LocalLinksMenu :data="data" />
+        <LocalLinksMenu :data="data" :isRtl="rtlMode" />
       </div>
       <router-view
         v-slot="{ Component }"
@@ -43,9 +43,14 @@
 </template>
 
 <script setup>
-import { computed, ref } from "vue";
+// own vue components
 import LocalLinksMenu from "@/components/LocalLinksMenu.vue";
+// own js files
+import { isRTL } from "@/utils";
+// vue imports
 import { useRoute } from "vue-router";
+import { computed, ref } from "vue";
+// primevue components
 import {
   Accordion,
   AccordionPanel,
@@ -67,7 +72,7 @@ const data = computed(() => {
 
 const mobileLocalLinksMenuOpen = ref(false);
 
-const isRtl = false;
+const rtlMode = computed(() => isRTL());
 </script>
 
 <style lang="scss">

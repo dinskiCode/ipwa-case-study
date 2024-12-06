@@ -1,11 +1,11 @@
 <template>
-  <div class="grid grid-cols-4 p-0">
+  <div class="grid grid-cols-4 p-0 header">
     <div
       class="md:col-span-1 col-span-2 name-wrapper flex justify-content-start p-2"
     >
-      <div class="logo-container bg-white rounded py-1 px-2">
+      <router-link to="/" class="logo-container bg-white rounded py-1 px-2">
         <img src="@/assets/logos/greenfighters-no-text.png" alt="" srcset="" />
-      </div>
+      </router-link>
     </div>
     <div
       class="md:col-span-1 col-span-2 global-links flex justify-content-end items-end"
